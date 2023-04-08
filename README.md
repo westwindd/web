@@ -1,19 +1,19 @@
-# GitHub Pages
+# Protótipo figma
 
-<https://utfpr-gp.github.io/roubank/>
+<https://www.figma.com/proto/BNyWFRYM8hqM66lWkI1NBg/Website-Prototype-(Community)?node-id=53-178&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=10%3A2>
 
 # Checkist
 
 Caixas de Diálogo
 
-- [x] prompt
-- [x] alert
-- [x] confirm
+- [ ] prompt
+- [ ] alert
+- [ ] confirm
 
 Temporizadores
 
-- [x] setInterval
-- [x] setTimeout
+- [ ] setInterval
+- [ ] setTimeout
 
 Funções
 
@@ -28,7 +28,7 @@ Funções
 
 Eventos
 
-- [x] Evento de carregamento do documento - onload
+- [ ] Evento de carregamento do documento - onload
 - [ ] Evento de movimento do mouse
 - [ ] Evento de teclado - usar charCode ou keyCode
 - [ ] Eventos de formulário - onfocus e onblur
