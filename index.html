@@ -12,67 +12,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <nav>
+    <nav role="navigation">
       <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo"><a>V-TECH</a></label> 
+      <label class="logo">V-TECH</label>
       <ul>
         <li><a class="active" href="#">Início</a></li>
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Serviços</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
     </nav>
-  
 
-      <div id="imagemCentral">
-              <img class="feature-image" src="https://tecnolaguna.com.mx/wp-content/uploads/2022/05/reparacion-de-tablets-en-torreon.jpg" alt="fern" id="imagemCentral" />
-      </div>
-    <section>
+    <div class="image-container">
+        <img src="https://www.uniquenewsonline.com/wp-content/uploads/2021/05/gadget-Repair.png" alt="Tablet repair image">
+        <div class="text-container">
+            <h1 class="centered-text">BEM VINDO A V-TECH</h1>
+            <p><br>Somos uma empresa que presta serviços de assistência técnica para diversos dispositivos.<br>E oferecemos soluções para seus problemas técnológicos.</p>            <a href="#" class="centered-button">Saiba Mais</a> <!-- This is the new button -->
+        </div>
+    </div>
+    <section class="content">
       <h1>Conteúdo</h1>
+      <p>Esse é um site informativo sobre o nossa empresa, o site ainda está em desenvolvimento.</p>
     </section>
+
+   <!--  <section class="services">
+      <h1>Services</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit nibh vitae turpis cursus, quis.</p>
+    </section> -->
+
+    <footer>
+      <p>Copyright © 2023 V-TECH. All rights reserved.</p>
+    </footer>
     <div id="status"></div>
-    <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId: '2406526169495714',
-        cookie: true,
-        xfbml: true,
-        version: 'v16.0'
-      });
-      
-      FB.AppEvents.logPageView();
-    };
-     function statusChangeCallback(response) {
-                console.log('statusChangeCallback');
-                console.log(response);
-                // The response object is returned with a status field that lets the
-                // app know the current login status of the person.
-                // Full docs on the response object can be found in the documentation
-                // for FB.getLoginStatus().
-                if (response.status === 'connected') {
-                    // Logged into your app and Facebook.
-                    console.log('Welcome!  Fetching your information.... ');
-                    FB.api('/me', function (response) {
-                        console.log('Successful login for: ' + response.name);
-                        document.getElementById('status').innerHTML =
-                          'Thanks for logging in, ' + response.name + '!';
-                    });
-                } else {
-                    // The person is not logged into your app or we are unable to tell.
-                    document.getElementById('status').innerHTML = 'Please log ' +
-                      'into this app.';
-                }
-            }
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
+    <script src="function.js"></script>
   </body>
 </html>
